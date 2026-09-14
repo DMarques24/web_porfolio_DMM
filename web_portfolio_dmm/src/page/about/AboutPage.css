@@ -1,0 +1,21 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+}
+
+.aboutme {
+  display: grid;
+  align-items: center;
+  margin: 10px;
+}
+
+.imageaboutme {
+  margin: 10px;
+}
+
+.imageaboutme img {
+  border: 5px solid #111184;
+  border-radius: 20px;
+}
