@@ -1,3 +1,5 @@
+import "./Card.css";
+
 type CardProps = {
   nome: string;
   descricao: string;
@@ -6,13 +8,17 @@ type CardProps = {
 };
 
 function Card({ nome, descricao, link, linkLabel }: CardProps) {
-  <div>
-    <h1>{nome}</h1>
-    <p>{descricao}</p>
-    <div>
-      <a href={link}>{linkLabel}</a>{" "}
+  return (
+    <div className="mainCard">
+      <h1 className="titleCard">{nome}</h1>
+      <p className="descricaoCard">{descricao}</p>
+      <div>
+        <a className="linkCard" href={link}>
+          {linkLabel}
+        </a>{" "}
+      </div>
     </div>
-  </div>;
+  );
 }
 
 export default Card;
