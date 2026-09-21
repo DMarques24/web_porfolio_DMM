@@ -2,19 +2,62 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: black;
-  color: white;
-  border-style: solid;
-  border-radius: 10px;
-  border-color: #111184;
-  border-width: 5px;
+  gap: 24px;
+  flex-wrap: wrap;
+
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px 20px;
+  margin-bottom: 40px;
 }
+
 .logo {
-  margin-left: 20px;
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--text);
 }
 
 .navigation {
   display: flex;
-  gap: 20px;
-  margin-right: 20px;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+/* Os itens do menu estão em <h1> no TSX, por isso desligamos
+   o tamanho de título e tratamos como botões de navegação. */
+.navigation h1,
+.navigation a {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  padding: 6px 12px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease;
+  white-space: nowrap;
+}
+
+.navigation h1:hover,
+.navigation a:hover {
+  background-color: var(--bg-hover);
+  color: var(--text);
+  text-decoration: none;
+}
+
+/* Junta className="active" ao item da página atual */
+.navigation .active {
+  color: var(--text);
+  background-color: var(--accent-soft);
+}
+
+@media (max-width: 640px) {
+  .header {
+    justify-content: center;
+    text-align: center;
+  }
 }

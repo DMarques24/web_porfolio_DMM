@@ -3,7 +3,7 @@ import personImage from "../../assets/random-person.jpeg";
 
 function AboutPage() {
   return (
-    <div className="main">
+    <div className="mainAbout">
       <div className="aboutme">
         <p>
           Olá! Sou o Diogo Moura Marques, um apaixonado por tecnologia e

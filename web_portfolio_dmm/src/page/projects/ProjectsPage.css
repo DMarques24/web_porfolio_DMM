@@ -1,6 +1,24 @@
 .mainProject {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 10px;
+  display: block;
+  padding: 8px 0 40px;
+}
+
+.mainProject > h1 {
+  font-size: 1.5rem;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 24px;
+}
+
+.projectGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 16px;
+  align-items: stretch;
+}
+
+@media (max-width: 700px) {
+  .projectGrid {
+    grid-template-columns: 1fr;
+  }
 }

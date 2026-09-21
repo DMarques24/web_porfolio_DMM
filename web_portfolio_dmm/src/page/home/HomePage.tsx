@@ -3,7 +3,7 @@ import codeImage from "../../assets/code2.avif";
 
 function HomePage() {
   return (
-    <div className="main">
+    <div className="mainHome">
       <div className="presentation">
         <h1>Hello, i'm Diogo</h1>
         <h2>Moura Marques</h2>

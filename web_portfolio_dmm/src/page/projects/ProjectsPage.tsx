@@ -6,12 +6,14 @@ function ProjectsPage() {
     <div className="mainProject">
       <h1>My Projects</h1>
 
-      <Card
-        nome="teste"
-        descricao="testes"
-        link="https://exemplo.com"
-        linkLabel="teste"
-      />
+      <div className="projectGrid">
+        <Card
+          nome="teste"
+          descricao="testes"
+          link="https://exemplo.com"
+          linkLabel="teste"
+        />
+      </div>
     </div>
   );
 }
